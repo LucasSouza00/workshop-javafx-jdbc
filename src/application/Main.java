@@ -13,6 +13,7 @@ public class Main extends Application {
 	
 	private static Scene mainScene;
 	
+	// Criar a tela principal do programa
 	@Override
 	public void start(Stage primaryStage) {
 		try {
