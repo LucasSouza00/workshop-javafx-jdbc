@@ -3,8 +3,7 @@ package model.entities;
 import java.io.Serializable;
 
 public class Department implements Serializable {
-	
-	// Classe departamento do programa
+
 	private static final long serialVersionUID = 1L;
 
 	private Integer id;
