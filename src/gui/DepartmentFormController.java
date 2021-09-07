@@ -57,7 +57,8 @@ public class DepartmentFormController implements Initializable{
 	public void subscribeDataChangeListener(DataChangeListener listener) {
 		dataChangeListeners.add(listener);
 	}
-
+	
+	// Função de ação do botão save
 	@FXML
 	public void onBtSaveAction(ActionEvent event) {
 		if (entity == null) {
@@ -103,7 +104,8 @@ public class DepartmentFormController implements Initializable{
 		}
 		return obj;
 	}
-
+	
+	// Função de ação do botão cancel
 	@FXML
 	public void onBtCancelAction(ActionEvent event) {
 		Utils.currentStage(event).close();

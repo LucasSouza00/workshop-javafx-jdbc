@@ -148,7 +148,7 @@ public class DepartmentListController implements Initializable, DataChangeListen
 		});
 	}
 	
-	// adicionar um botão remove
+	// Adicionar um botão remove
 	private void initRemoveButtons() {
 		tableColumnREMOVE.setCellValueFactory(param -> new ReadOnlyObjectWrapper<>(param.getValue()));
 		tableColumnREMOVE.setCellFactory(param -> new TableCell<Department, Department>() {
@@ -166,7 +166,8 @@ public class DepartmentListController implements Initializable, DataChangeListen
 			}
 		});
 	}
-
+	
+	// Função para remover um departamento
 	private void removeEntity(Department obj) {
 		Optional<ButtonType> result = Alerts.showConfirmation("Confirmation", "Are you sure to delete?");
 		

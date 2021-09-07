@@ -14,7 +14,7 @@ public class DepartmentService {
 		return dao.findAll();
 	}
 	
-	// Função para salvara ou atualizar um departamento
+	// Função para salvar ou atualizar um departamento
 	public void saveOrUpadate(Department obj) {
 		if (obj.getId() == null) {
 			dao.insert(obj);
